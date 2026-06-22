@@ -1,0 +1,30 @@
+{
+  "skill_id": "vfx-preprod-architect",
+  "version": "1.0.0",
+  "author": "legendaaryy0",
+  "bounty": "Ascendant Pack",
+  "ecosystem": "IronClaw",
+  "display_name": "VFX Pre-Production Architect",
+  "description": "Translates a director's natural-language scene description into a fully structured VFX pre-production technical breakdown covering camera, lighting, on-set protocols, and render pipeline.",
+  "input": {
+    "type": "string",
+    "name": "scene_description",
+    "description": "Natural language description of the VFX scene from the director or cinematographer."
+  },
+  "output": {
+    "type": "structured_markdown",
+    "sections": [
+      "camera_lens_protocol",
+      "lighting_strategy",
+      "onset_protocols",
+      "render_pipeline",
+      "preprod_checklist"
+    ]
+  },
+  "trigger_keywords": [
+    "composite", "VFX shot", "CGI", "clean plate", "HDRI",
+    "render pass", "holographic", "3D asset", "green screen",
+    "tracking markers", "AOV", "shadow catcher", "z-depth"
+  ],
+  "tags": ["vfx", "pre-production", "cinematography", "compositing", "3d", "lighting", "agent-skill"]
+}
